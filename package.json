@@ -1,0 +1,17 @@
+{
+  "name": "@addapptable/cqrs",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "https://github.com/addapptables/cqrs.git",
+  "author": "<develop@addapptables.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "typescript": "^3.0.3"
+  }
+}
