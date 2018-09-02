@@ -1,1 +1,3 @@
-export interface IEventDto {}
+export interface IEventDto {
+    [key: string]: any;
+}
