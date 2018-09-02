@@ -8,15 +8,12 @@ export abstract class AggregateRoot {
     return this.events;
   }
 
-  loadFromHistory(history: IEvent<IEventDto>[]) {
+  loadFromHistory(history: IEvent<IEventDto>[]): void {
     history.forEach(event => this.apply(event, true));
   }
 
-  apply(event: IEvent<IEventDto>, isFromHistory = false) {
-    if (!isFromHistory) {
-      this.events.push(event);
-    }
-
+  apply(event: IEvent<IEventDto>, isFromHistory = false): void {
+    !isFromHistory && this.events.push(event);
     const handler = this.getEventHandler(event);
     handler && handler.call(this, event);
   }
@@ -31,4 +28,3 @@ export abstract class AggregateRoot {
     return constructor.name as string;
   }
 }
-

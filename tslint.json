@@ -1,0 +1,11 @@
+{
+    "extends": [
+        "backend-tslint-rules"
+    ],
+    "rules": {
+        "newline-before-return": false,
+        "prefer-function-over-method": false,
+        "array-type": false,
+        "no-empty-interface": false
+    }
+}
