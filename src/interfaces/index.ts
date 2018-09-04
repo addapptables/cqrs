@@ -7,3 +7,5 @@ export { IEventDto } from './events/event-dto.interface';
 export { IEventHandlerOptions } from './events/event-handler-options.interface';
 export { IEventHandler } from './events/event-handler.interface';
 export { IEvent } from './events/event.interface';
+
+export { IHandler } from './handler.inteface';

@@ -1,3 +1,4 @@
 export interface IEventDto {
-    [key: string]: any;
+    [propName: string]: any;
+    id: any;
 }

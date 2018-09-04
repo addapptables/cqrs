@@ -1,7 +1,8 @@
 {
-  "name": "@addapptable/cqrs",
+  "name": "@addapptables/cqrs",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/addapptables/cqrs.git",
   "author": "<develop@addapptables.com>",
   "license": "MIT",
