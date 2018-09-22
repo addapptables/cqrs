@@ -12,14 +12,18 @@
   "scripts": {
     "build": "yarn lint && tsc",
     "precommit": "yarn lint",
-    "lint": "tslint -p tsconfig.json -c tslint.json"
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "mocha --require ts-node/register test/**/*.ts"
   },
   "dependencies": {
     "reflect-metadata": "^0.1.12"
   },
   "devDependencies": {
+    "@types/mocha": "^5.2.5",
     "backend-tslint-rules": "^1.4.0",
+    "mocha": "^5.2.0",
     "pre-commit": "^1.2.2",
+    "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
     "typescript": "^3.0.3"
   }
