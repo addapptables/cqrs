@@ -1,17 +1,30 @@
 {
-  "name": "@addapptable/cqrs",
+  "name": "@addapptables/cqrs",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "https://github.com/addapptables/cqrs.git",
-  "author": "<develop@addapptables.com>",
+  "author": "dev@addapptables.com",
   "license": "MIT",
+  "pre-commit": [
+    "precommit"
+  ],
   "scripts": {
-    "build": "tsc"
+    "build": "yarn lint && tsc",
+    "precommit": "yarn lint",
+    "lint": "tslint -p tsconfig.json -c tslint.json",
+    "test": "mocha --require ts-node/register test/**/*.ts"
   },
   "dependencies": {
-    "reflect-metadata": "^0.1.12"
+    "reflect-metadata": "0.1.12"
   },
   "devDependencies": {
-    "typescript": "^3.0.3"
+    "@types/mocha": "5.2.5",
+    "backend-tslint-rules": "1.4.0",
+    "mocha": "5.2.0",
+    "pre-commit": "1.2.2",
+    "ts-node": "7.0.1",
+    "tslint": "5.11.0",
+    "typescript": "3.0.3"
   }
 }
