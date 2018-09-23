@@ -1,5 +1,7 @@
 import { ICommandDto } from './command-dto-interface';
 export interface ICommand<T extends ICommandDto> {
-    cid?: string;
+    context: string;
+    action: string;
     data: T;
+    cid?: string;
 }

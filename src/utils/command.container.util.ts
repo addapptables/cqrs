@@ -1,4 +1,4 @@
-import { IHandler } from '../interfaces/handler.inteface';
+import { IHandler } from '../interfaces/handler.interface';
 import { ICommandDto } from '../interfaces/commands/command-dto-interface';
 
 export type TypeCommandContainer = IHandler<ICommandDto> | any;

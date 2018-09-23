@@ -1,4 +1,4 @@
-import { IHandler } from '../interfaces/handler.inteface';
+import { IHandler } from '../interfaces/handler.interface';
 import { IEventDto } from '../interfaces/events/event-dto.interface';
 
 export type TypeEventContainer = IHandler<IEventDto> | any;
