@@ -11,6 +11,10 @@ export class CommandContainer {
         CommandContainer.bindings.push(target);
     }
 
+    static get(targetName: string): TypeCommandContainer {
+        return CommandContainer.bindings.find(target => target.name === targetName);
+    }
+
     static getAll(): TypeCommandContainer[] {
         return CommandContainer.bindings;
     }

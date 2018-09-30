@@ -11,6 +11,10 @@ export class EventContainer {
         EventContainer.bindings.push(target);
     }
 
+    static get(targetName: string): TypeEventContainer {
+        return EventContainer.bindings.find(target => target.name === targetName);
+    }
+
     static getAll(): TypeEventContainer[] {
         return EventContainer.bindings;
     }

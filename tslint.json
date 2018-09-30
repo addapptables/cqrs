@@ -11,6 +11,7 @@
         "no-shadowed-variable": false,
         "no-null-keyword": false,
         "no-implicit-dependencies": false,
+        "newline-per-chained-call": false,
         "trailing-comma": [
             true,
             {
